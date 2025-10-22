@@ -1,96 +1,108 @@
 # open-web-playground
 
-A beginner-friendly, collaborative playground for practicing and learning HTML, CSS, and JavaScript. Perfect for first-time contributors!
+[![Build Status](https://img.shields.io/github/actions/workflow/status/Faizan-902/open-web-playground/ci.yml?branch=main)](../../actions)
+[![License](https://img.shields.io/github/license/Faizan-902/open-web-playground)](./LICENSE)
+[![Hacktoberfest](https://img.shields.io/badge/Hacktoberfest-2025-%23FF8AE2)](https://hacktoberfest.com/)
+
+A beginner-friendly, collaborative playground for practicing and learning HTML, CSS, and JavaScript. Perfect for first-time contributors and small web experiments.
+
+---
+
+## Table of Contents
+- About
+- Prerequisites
+- Installation
+- Usage
+- Screenshots / Demo
+- Running Tests
+- Project Structure
+- Contributing
+- License
+- Show Your Support
 
 ## 📚 About
+open-web-playground provides a simple environment to practice web development skills, contribute to open source, and learn by doing. Whether you're just starting out or looking to sharpen your skills, this playground welcomes all contributors.
 
-This project provides a simple environment for developers to practice web development skills, contribute to open source, and learn by doing. Whether you're just starting out or looking to sharpen your skills, this playground welcomes all contributors!
+### Purpose
+- Offer simple, self-contained examples for learning HTML/CSS/JS
+- Provide good first issues for open-source newcomers
+- Encourage testing habits with a minimal Jest setup
 
-## 🚀 Getting Started
+## 🚦 Prerequisites
+- A modern web browser (Chrome, Firefox, Safari, Edge)
+- Node.js (v14+) for running tests and tooling: https://nodejs.org/
+- A text editor (VS Code recommended)
 
-### Prerequisites
+## ⚙️ Installation
+1) Clone the repository
+```bash
+git clone https://github.com/Faizan-902/open-web-playground.git
+cd open-web-playground
+```
+2) (Optional) Install dependencies for tooling/tests
+```bash
+npm install
+```
 
-- A web browser (Chrome, Firefox, Safari, etc.)
-- [Node.js](https://nodejs.org/) (v14 or higher) - for running tests
-- A text editor (VS Code, Sublime Text, etc.)
+## 🧑‍💻 Usage
+- Open index.html directly in your browser to view the project
+- Edit HTML/CSS/JS files and refresh the page to see changes
+- Explore the examples/ directory for small focused demos
 
-### Installation
+Common scripts
+```bash
+# Start a simple local server (if you install one, e.g. serve)
+npx serve .
+```
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/Faizan-902/open-web-playground.git
-   cd open-web-playground
-   ```
+## 📸 Screenshots / Demo
+- Static preview: open index.html locally
+- Example demos are in the examples/ directory
 
-2. Install dependencies:
-   ```bash
-   npm install
-   ```
-
-3. Open `index.html` in your browser to view the project.
+> If you have a hosted demo or screenshots, add them here (e.g., GitHub Pages link).
 
 ## 🧪 Running Tests
+This project uses Jest for unit testing JavaScript code.
 
-This project uses [Jest](https://jestjs.io/) for unit testing JavaScript code.
-
-### Run all tests:
+Run all tests
 ```bash
 npm test
 ```
-
-### Run tests in watch mode:
+Watch mode
 ```bash
 npm run test:watch
 ```
-
-### Generate coverage report:
+Coverage report
 ```bash
 npm run test:coverage
 ```
-
-The coverage report will be generated in the `coverage/` directory. Open `coverage/index.html` in your browser to view detailed coverage information.
+The coverage report is generated in coverage/; open coverage/index.html in your browser for details.
 
 ## 📁 Project Structure
-
 ```
 open-web-playground/
-├── index.html          # Main HTML file
-├── utils.js            # Utility functions
-├── tests/              # Test files
-│   └── utils.test.js   # Unit tests for utils.js
-├── package.json        # Project dependencies and scripts
-└── README.md          # Project documentation
+├─ index.html
+├─ styles.css
+├─ script.js
+├─ utils.js
+├─ examples/
+├─ tests/
+├─ package.json
+└─ README.md
 ```
 
 ## 🤝 Contributing
-
-We welcome contributions! Here's how you can help:
-
-1. Fork the repository
-2. Create a new branch (`git checkout -b feature/your-feature-name`)
-3. Make your changes
-4. Write or update tests as needed
-5. Ensure all tests pass (`npm test`)
-6. Commit your changes (`git commit -m 'Add some feature'`)
-7. Push to the branch (`git push origin feature/your-feature-name`)
-8. Open a Pull Request
+We welcome contributions of all sizes. Please read the CONTRIBUTING.md for guidelines, coding standards, and how to get started. Good first issues are labeled accordingly.
 
 ### Code Quality
-
-- Write clean, readable code
-- Add comments where necessary
-- Follow existing code style
-- Write tests for new features
-- Ensure all tests pass before submitting PR
-
-## 🏷️ Hacktoberfest
-
-This project participates in [Hacktoberfest](https://hacktoberfest.com/)! We welcome contributions from developers of all skill levels during October.
+- Keep examples small and focused
+- Write/maintain tests where applicable
+- Run tests locally before submitting PRs
 
 ## 📝 License
-
-This project is licensed under the MIT License.
+This project is licensed under the MIT License. See LICENSE for details.
 
 ## 🌟 Show Your Support
-
-Give a ⭐️ if you found this project helpful!
+- Star this repository if you find it useful
+- Share it with friends participating in Hacktoberfest
+- Open PRs for documentation, examples, and small fixes
